@@ -388,6 +388,34 @@ public class LoginView {
         }
     }
     
+    private boolean validateLoginWithFieldErrors(String username, String password, boolean isPemain, 
+                                               TextField usernameField, PasswordFieldContainer passwordContainer,
+                                               VBox usernameSection, VBox passwordSection) {
+        boolean isValid = true;
+        
+        
+        if (username.isEmpty()) {
+            setFieldError(usernameField, usernameSection, "Username harus diisi");
+            isValid = false;
+        } else if (isPemain && !username.contains("@pemain")) {
+            setFieldError(usernameField, usernameSection, "Username pemain harus mengandung @pemain");
+            isValid = false;
+        } else if (!isPemain && username.contains("@pemain")) {
+            setFieldError(usernameField, usernameSection, "Username pelatih/admin tidak boleh mengandung @pemain");
+            isValid = false;
+        }
+        
+        
+        if (password.isEmpty()) {
+            setPasswordError(passwordSection, passwordContainer, "Password harus diisi");
+            isValid = false;
+        } else if (!isPemain && !isValidAdminCredentials(username, password)) {
+            setPasswordError(passwordSection, passwordContainer, "Username atau password pelatih/admin salah");
+            isValid = false;
+        }
+        
+        return isValid;
+    }
     
     private boolean isValidAdminCredentials(String username, String password) {
         
