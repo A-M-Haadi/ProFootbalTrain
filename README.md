@@ -90,9 +90,11 @@ Menghapus jadwal dari data yang tersimpan
 Menginput data kehadiran dan mengedit kehadiran pemain tiap sesi latihan
     
 ## Teknologi yang Digunakan
-**1. Java:**
-**2. JavaFX:**
-**3. Gradle:**
+**1. Java:** 21.0.7
+
+**2. JavaFX:** Sesuai dengan JDK 21
+
+**3. Gradle:** 8.9
 
 ## Cara Menjalankan Project
 **1. Clone**
@@ -109,7 +111,7 @@ cd
 ```
 
 **3. Install JDK dan Gradle**
-Pastikan Anda sudah menginstall JDK 23 dan Gradle 
+Pastikan Anda sudah menginstall JDK 21 dan Gradle 8.9
 
 **4. Bangun Project**
 Bangun project dengan perintah
@@ -121,7 +123,7 @@ gradle build
 **5. Jalankan aplikasi mengggunakan perintah**
 
 ```java
-.\gradlew run
+.\gradlew.bat run
 ```
 
 ## Konsep OOP
