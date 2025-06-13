@@ -1,5 +1,6 @@
-package org.example.models;
+package pftrain.models;
 
 public class Admin {
+
     
 }

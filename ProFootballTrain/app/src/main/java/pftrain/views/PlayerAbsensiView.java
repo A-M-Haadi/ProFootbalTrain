@@ -1,4 +1,4 @@
-package org.example.views;
+package pftrain.views;
 
 public class PlayerAbsensiView {
 
