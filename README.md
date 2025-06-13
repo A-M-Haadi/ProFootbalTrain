@@ -88,13 +88,101 @@ Menghapus jadwal dari data yang tersimpan
 
 **5. Absensi**
 Menginput data kehadiran dan mengedit kehadiran pemain tiap sesi latihan
+    
+## Teknologi yang Digunakan
+**1. Java:**
+**2. JavaFX:**
+**3. Gradle:**
 
+## Cara Menjalankan Project
+**1. Clone**
+Clone repository ini ke komputer Anda menggunakan git clone
 
+```java
+git clone https://github.com/A-M-Haadi/ProFootbalTrain.git
+```
 
+**2. Directpry**
+Masuk ke directory project
+```java
+cd
+```
 
+**3. Install JDK dan Gradle**
+Pastikan Anda sudah menginstall JDK 23 dan Gradle 
+
+**4. Bangun Project**
+Bangun project dengan perintah
+
+```java
+gradle build
+```
+
+**5. Jalankan aplikasi mengggunakan perintah**
+
+```java
+.\gradlew run
+```
+
+## Konsep OOP
+**1. Abstract & Interface**
+```java
+public abstract class User {
+    protected String username;
+    protected String password;
+    protected String fullName;
+    protected String role;
+    protected String avatarColor = "#7FB069";
+
+    public User(String username, String password, String fullName, String role) {
+        this.username = username;
+        this.password = password;
+        this.fullName = fullName;
+        this.role = role;
+    }
+```
+
+```java
+public interface IDisplayable {
+    String getDisplayName();     
+    String getDisplayInfo();
+}
+```
+**2. Encapsulation**
+```java
+public class Absensi {
+    private int jadwalId;
+    private String usernamePemain;
+    private String statusKehadiran;
+
+    ...
+    }
+```
+**3. Polymorphisme**
+```java
+@Override
+    public String getDisplayName() {
+        return getFullName() + " (#" + nomorPunggung + ")";
+    }
+
+    @Override
+    public String getDisplayInfo() {
+        return posisi + " - " + tim + " - Age: " + calculateAge();
+    }
 
 ```
-    
-## Fitur untuk Pemain
-**1. Lihat Jadwal Latihan**
->>>>>>> 74cf614513f5087be5a1b143e2d2199873c2db69
+**4. Inheritance**
+```java
+public class Admin extends User implements IDisplayable {
+    public Admin(String username, String password, String fullName) {
+        super(username, password, fullName, "admin");
+    }
+```
+
+
+
+
+
+
+
+
