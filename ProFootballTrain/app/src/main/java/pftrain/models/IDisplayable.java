@@ -1,6 +1,6 @@
 package pftrain.models;
 
-public class IDisplayable {
-
-    
+public interface IDisplayable {
+    String getDisplayName();     
+    String getDisplayInfo();
 }
