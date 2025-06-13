@@ -19,7 +19,7 @@ java {
 }
 
 application {
-    mainClass = 'org.example.ProFootballTrain'
+    mainClass = 'pftrain.ProFootballTrain'
 }
 
 javafx {
