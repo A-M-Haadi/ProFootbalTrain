@@ -107,7 +107,7 @@ git clone https://github.com/A-M-Haadi/ProFootbalTrain.git
 **2. Directpry**
 Masuk ke directory project
 ```java
-cd
+cd ProFootbalTrain/ProFootballTrain
 ```
 
 **3. Install JDK dan Gradle**
