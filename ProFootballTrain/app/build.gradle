@@ -9,11 +9,6 @@ repositories {
 
 dependencies {
 
-    testImplementation libs.junit.jupiter.api
-    testRuntimeOnly libs.junit.jupiter.engine
-
-    implementation libs.guava
-    implementation 'org.xerial:sqlite-jdbc:3.45.2.0'
     
 }
 
@@ -24,7 +19,7 @@ java {
 }
 
 application {
-    mainClass = 'org.example.MyTrainingApp'
+    mainClass = 'org.example.ProFootballTrain'
 }
 
 javafx {
