@@ -60,8 +60,47 @@ Semua data disimpan dalam file:
    
 ## Struktur Folder
 ```
-ProFootballTrain/
-├── 
+📁 src
+├── 📁 main
+│   └── 📁 java
+│       └── 📁 pftrain
+│           ├── 📁 controllers
+│           │   └── ScreenController.java
+│           ├── 📁 models
+│           │   ├── Admin.java
+│           │   ├── Absensi.java
+│           │   ├── DataManager.java
+│           │   ├── IDisplayable.java
+│           │   ├── JadwalLatihan.java
+│           │   ├── Player.java
+│           │   ├── User.java
+│           │   └── UserSession.java
+│           ├── 📁 utils
+│           │   └── UIComponents.java
+│           └── 📁 views
+│               ├── AbsensiView.java
+│               ├── AdminProfileView.java
+│               ├── DashboardView.java
+│               ├── JadwalView.java
+│               ├── LoginView.java
+│               ├── PlayerAbsensiView.java
+│               ├── PlayerProfileView.java
+│               ├── SignupView.java
+│               └── WelcomeView.java
+├── 📁 test
+│   └── 📁 java
+│       └── 📁 pftrain
+│           └── AppTest.java
+📁 resources
+└── 📁 images
+    └── (icons/images files)
+
+📄 .gitattributes  
+📄 .gitignore  
+📄 gradlew  
+📄 gradle.bat  
+📄 settings.gradle  
+📄 README.md
 
 ```
     
