@@ -1,6 +1,6 @@
 plugins {
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.13'
+    id 'org.openjfx.javafxplugin' version '0.0.14' 
 }
 
 repositories {
@@ -8,9 +8,13 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
-    implementation 'com.google.guava:guava:30.1-jre'
+
+    testImplementation libs.junit.jupiter.api
+    testRuntimeOnly libs.junit.jupiter.engine
+
+    implementation libs.guava
     implementation 'org.xerial:sqlite-jdbc:3.45.2.0'
+    
 }
 
 java {
@@ -24,6 +28,6 @@ application {
 }
 
 javafx {
-    version = "23.0.2"  
-    modules = [ 'javafx.controls', 'javafx.fxml' ]
+    version = "21" 
+    modules = [ 'javafx.controls', 'javafx.fxml' ] 
 }

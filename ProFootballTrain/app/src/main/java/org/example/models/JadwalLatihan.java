@@ -1,6 +1,6 @@
 package org.example.models;
 
-public class DataManager {
+public class JadwalLatihan {
 
     
 }

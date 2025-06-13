@@ -1,4 +1,4 @@
-package org.example.viewsviews;
+package org.example.views;
 
 public class LoginView {
 

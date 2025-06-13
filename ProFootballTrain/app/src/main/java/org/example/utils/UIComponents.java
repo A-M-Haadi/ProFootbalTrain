@@ -1,6 +1,6 @@
-public package org.example.utils;
+package org.example.utils;
 
-class UIComponents {
+public class UIComponents {
 
     
 }

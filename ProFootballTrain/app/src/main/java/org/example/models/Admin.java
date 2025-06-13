@@ -1,6 +1,5 @@
-public package org.example.models;
+package org.example.models;
 
-class Admin {
-
+public class Admin {
     
 }

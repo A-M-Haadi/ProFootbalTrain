@@ -1,4 +1,4 @@
-public package org.example.controllers;
+package org.example.controllers;
 
 class SceneController {
 
